@@ -5,20 +5,16 @@ class Solution {
         int max = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
+            int currentValue = nums[i];
+            max = Math.max(max, currentValue);
             if(nums[i]==0) {
-                max = Math.max(max, nums[i]);
                 continue;
             }
-            max = Math.max(max, nums[i]);
-            int currentValue = nums[i];
 
-            int indexOfZero = nums.length;
-
-            for (int j = i + 1; j < indexOfZero; j++) {
+            for (int j = i + 1; j < nums.length; j++) {
                 currentValue = currentValue * nums[j];
                 max = Math.max(max, currentValue);
                 if (nums[j] == 0) {
-                    indexOfZero = j;
                     break;
                 }
             }
