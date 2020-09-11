@@ -11,7 +11,7 @@ class Solution {
             }
             max = Math.max(max, nums[i]);
             int currentValue = nums[i];
-            
+
             int indexOfZero = nums.length;
 
             for (int j = i + 1; j < indexOfZero; j++) {
