@@ -17,7 +17,11 @@ public class TestSolution {
         return Stream.of(
                 Arguments.of("leetcode", Arrays.asList(new String[] { "leet", "code" }), true),
                 Arguments.of("applepenapple", Arrays.asList(new String[] { "apple", "pen" }), true),
-                Arguments.of("catsandog", Arrays.asList(new String[] { "cats", "dog", "sand", "and", "cat" }), false)
+                Arguments.of("catsandog", Arrays.asList(new String[] { "cats", "dog", "sand", "and", "cat" }), false),
+                Arguments.of("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", 
+                        Arrays.asList(new String[] {"a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa" }), false)
+                
+
                 );
     }
 
