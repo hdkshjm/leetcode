@@ -1,30 +1,29 @@
 package leetcode.hdkshjm.month11.week1.chap3480;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.ArrayDeque;
 
 class RecentCounter {
-    private List<Integer> range;
+    private ArrayDeque<Integer> queue;
 
     public RecentCounter() {
-        range = new ArrayList<Integer>();
+        queue = new ArrayDeque<Integer>();
     }
 
     public int ping(int t) {
         while (true) {
-            if (range.size() == 0) {
+            if (queue.size() == 0) {
                 break;
             }
 
-            int time = range.get(0);
+            int time = queue.getFirst();
             if (t - time > 3000) {
-                range.remove(0);
+                queue.removeFirst();
             } else {
                 break;
             }
         }
 
-        range.add(range.size(), t);
-        return range.size();
+        queue.addLast(t);
+        return queue.size();
     }
 }
