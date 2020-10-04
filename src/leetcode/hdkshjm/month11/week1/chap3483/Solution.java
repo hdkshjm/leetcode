@@ -15,14 +15,13 @@ class Solution {
 
         Iterator<Map.Entry<Integer, Integer>> iterator = map.entrySet().iterator();
         Map.Entry<Integer, Integer> entry = iterator.next();
-        int[] previous = new int[] { entry.getKey(), entry.getValue() };
+        int previousEnd = entry.getValue();
 
         int count = 1;
         while (iterator.hasNext()) {
             entry = iterator.next();
-            if (previous[0] > entry.getKey() || previous[1] < entry.getValue()) {
-                previous[0] = entry.getKey();
-                previous[1] = entry.getValue();
+            if (previousEnd < entry.getValue()) {
+                previousEnd = entry.getValue();
                 count++;
             }
         }
