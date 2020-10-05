@@ -23,56 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4969c7c-683b-4810-9f0a-aab91fb6fa14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week1_3454/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week1_3454/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week1_3454/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week1_3454/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3455/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3455/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3455/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3455/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3456/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3456/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3456/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3456/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3457/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3457/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3457/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3457/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3458/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3458/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3458/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3458/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3459/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3459/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week2_3459/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week2_3459/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week3_3461/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week3_3461/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week3_3461/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week3_3461/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week3_3463/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week3_3463/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week3_3463/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week3_3463/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week3_3464/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week3_3464/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week3_3464/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week3_3464/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week5/chap3477/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week5/chap3477/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week5/chap3477/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week5/chap3477/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week5/chap3478/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week5/chap3478/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month10/week5/chap3478/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month10/week5/chap3478/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3480/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3480/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3480/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3480/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3481/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3481/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3481/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3481/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3482/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3482/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3482/SolutionHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3482/SolutionHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3482/SolutionStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3482/SolutionStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3482/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3482/TestSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3483/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3483/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/month11/week1/chap3483/TestSolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/problems/roman_to_integer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/problems/roman_to_integer/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/hdkshjm/problems/roman_to_integer/TestSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/problems/roman_to_integer/TestSolution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,22 +51,49 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1iRrjEfUKAa2pe73pzciNcZ5dYT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestSolution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.hdkshjm.month11.week1.chap3484.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.hdkshjm.month11.week1.chap3484" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.hdkshjm.month11.week1.chap3484.TestSolution" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSolution" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -134,19 +116,39 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601881431968">
       <screen x="0" y="23" width="1792" height="1034" />
     </state>
     <state x="453" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1601881431968" />
-    <state x="345" y="182" key="Maven.ArtifactSearchDialog" timestamp="1601881715985">
+    <state width="1358" height="262" key="GridCell.Tab.0.bottom" timestamp="1601886191508">
       <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="345" y="182" key="Maven.ArtifactSearchDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1601881715985" />
-    <state x="477" y="101" key="SettingsEditor" timestamp="1601881671734">
+    <state width="1358" height="262" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191508" />
+    <state width="1358" height="262" key="GridCell.Tab.0.center" timestamp="1601886191508">
       <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="477" y="101" key="SettingsEditor/0.23.1792.1034@0.23.1792.1034" timestamp="1601881671734" />
+    <state width="1358" height="262" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191508" />
+    <state width="1358" height="262" key="GridCell.Tab.0.left" timestamp="1601886191507">
+      <screen x="0" y="23" width="1792" height="1034" />
+    </state>
+    <state width="1358" height="262" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191507" />
+    <state width="1358" height="262" key="GridCell.Tab.0.right" timestamp="1601886191508">
+      <screen x="0" y="23" width="1792" height="1034" />
+    </state>
+    <state width="1358" height="262" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191508" />
+    <state x="357" y="207" key="Maven.ArtifactSearchDialog" timestamp="1601886136426">
+      <screen x="0" y="23" width="1792" height="1034" />
+    </state>
+    <state x="357" y="207" key="Maven.ArtifactSearchDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1601886136426" />
+    <state x="321" y="194" key="SettingsEditor" timestamp="1601886521630">
+      <screen x="0" y="23" width="1792" height="1034" />
+    </state>
+    <state x="321" y="194" key="SettingsEditor/0.23.1792.1034@0.23.1792.1034" timestamp="1601886521630" />
   </component>
 </project>
