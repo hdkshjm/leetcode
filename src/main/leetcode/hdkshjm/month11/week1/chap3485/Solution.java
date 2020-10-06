@@ -3,26 +3,23 @@ package leetcode.hdkshjm.month11.week1.chap3485;
 class Solution {
 
     public TreeNode insertIntoBST(TreeNode root, int val) {
-        if (root == null) {
+        if( root == null){
             return new TreeNode(val);
         }
 
         TreeNode current = root;
-        while (true) {
-            if (current.left == null && current.val > val) {
-                TreeNode leftNode = new TreeNode(val);
-                current.left = leftNode;
-                break;
-            }
-            if (current.right == null && current.val < val) {
-                TreeNode rightNode = new TreeNode(val);
-                current.right = rightNode;
-                break;
-            }
-
-            if (val < current.val) {
+        while( true ){
+            if(  current.val > val ){
+                if( current.left == null ){
+                    current.left = new TreeNode(val);
+                    break;
+                }
                 current = current.left;
             } else {
+                if( current.right == null){
+                    current.right = new TreeNode(val);
+                    break;
+                }
                 current = current.right;
             }
         }
