@@ -49,8 +49,8 @@ class Solution {
 
         if (maxEndIndexes[0] == minStartIndexes[0]) {
             return Math.max(
-                getEnd(maxEndIndexes[1]) - getStart(minStartIndexes[0]),
-                getEnd(maxEndIndexes[0]) - getStart(minStartIndexes[1]));
+                    getEnd(maxEndIndexes[1]) - getStart(minStartIndexes[0]),
+                    getEnd(maxEndIndexes[0]) - getStart(minStartIndexes[1]));
         } else {
             return getEnd(maxEndIndexes[0]) - getStart(minStartIndexes[0]);
         }
