@@ -23,11 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4969c7c-683b-4810-9f0a-aab91fb6fa14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3486/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/leetcode/hdkshjm/month11/week1/chap3486/TestSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,19 +62,93 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3486" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="leetcode.hdkshjm.month11.week1.chap3485" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.hdkshjm.month11.week1.chap3486" />
+      <recent name="leetcode.hdkshjm.month11.week1.chap3479" />
+      <recent name="leetcode.hdkshjm.month11.week1.chap3485" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3486" />
+      <recent name="$PROJECT_DIR$/src/main/leetcode/hdkshjm/month11/week1/chap3479" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="TestSolution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestSolution.test (3)">
+    <configuration name="TestSolution (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.hdkshjm.month11.week1.chap3479.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.hdkshjm.month11.week1.chap3479" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.hdkshjm.month11.week1.chap3479.TestSolution" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolution.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.hdkshjm.month11.week1.chap3479.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.hdkshjm.month11.week1.chap3479" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.hdkshjm.month11.week1.chap3479.TestSolution" />
+      <option name="METHOD_NAME" value="test(java.util.List,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolution.test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.hdkshjm.month11.week1.chap3485.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.hdkshjm.month11.week1.chap3485" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.hdkshjm.month11.week1.chap3485.TestSolution" />
+      <option name="METHOD_NAME" value="test(leetcode.hdkshjm.month11.week1.chap3485.TreeNode,int,leetcode.hdkshjm.month11.week1.chap3485.TreeNode)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolution.test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.hdkshjm.month11.week1.chap3486.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.hdkshjm.month11.week1.chap3486" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.hdkshjm.month11.week1.chap3486.TestSolution" />
+      <option name="METHOD_NAME" value="test([Ljava.lang.Integer;,int,[Ljava.lang.Integer;)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolution.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -84,14 +158,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="leetcode.hdkshjm.month11.week1.chap3484" />
       <option name="MAIN_CLASS_NAME" value="leetcode.hdkshjm.month11.week1.chap3484.TestSolution" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="test(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSolution" />
+        <item itemvalue="JUnit.TestSolution.test (3)" />
+        <item itemvalue="JUnit.TestSolution.test (2)" />
+        <item itemvalue="JUnit.TestSolution.test (1)" />
+        <item itemvalue="JUnit.TestSolution (1)" />
+        <item itemvalue="JUnit.TestSolution.test" />
       </list>
     </recent_temporary>
   </component>
@@ -126,29 +205,62 @@
       <screen x="0" y="23" width="1792" height="1034" />
     </state>
     <state x="453" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1601881431968" />
-    <state width="1358" height="262" key="GridCell.Tab.0.bottom" timestamp="1601886191508">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state x="737" y="417" width="540" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601979937761">
+      <screen x="0" y="23" width="1792" height="1027" />
     </state>
-    <state width="1358" height="262" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191508" />
-    <state width="1358" height="262" key="GridCell.Tab.0.center" timestamp="1601886191508">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state x="737" y="417" width="540" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1792.1027@0.23.1792.1027" timestamp="1601979937761" />
+    <state x="750" y="392" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601979920434">
+      <screen x="0" y="23" width="1792" height="1027" />
     </state>
-    <state width="1358" height="262" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191508" />
-    <state width="1358" height="262" key="GridCell.Tab.0.left" timestamp="1601886191507">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state x="750" y="392" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1792.1027@0.23.1792.1027" timestamp="1601979920434" />
+    <state width="1750" height="250" key="GridCell.Tab.0.bottom" timestamp="1602067653275">
+      <screen x="0" y="23" width="1792" height="1031" />
     </state>
-    <state width="1358" height="262" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191507" />
-    <state width="1358" height="262" key="GridCell.Tab.0.right" timestamp="1601886191508">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state width="1750" height="250" key="GridCell.Tab.0.bottom/0.23.1792.1027@0.23.1792.1027" timestamp="1601990795885" />
+    <state width="1750" height="250" key="GridCell.Tab.0.bottom/0.23.1792.1031/1792.23.1920.1057@0.23.1792.1031" timestamp="1602067653275" />
+    <state width="1750" height="262" key="GridCell.Tab.0.bottom/0.23.1792.1031@0.23.1792.1031" timestamp="1601977305381" />
+    <state width="1750" height="250" key="GridCell.Tab.0.bottom/0.23.1792.1032/1792.23.1920.1057@0.23.1792.1032" timestamp="1602063884806" />
+    <state width="1358" height="262" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1601888355801" />
+    <state width="1750" height="250" key="GridCell.Tab.0.center" timestamp="1602067653274">
+      <screen x="0" y="23" width="1792" height="1031" />
     </state>
-    <state width="1358" height="262" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1601886191508" />
+    <state width="1750" height="250" key="GridCell.Tab.0.center/0.23.1792.1027@0.23.1792.1027" timestamp="1601990795884" />
+    <state width="1750" height="250" key="GridCell.Tab.0.center/0.23.1792.1031/1792.23.1920.1057@0.23.1792.1031" timestamp="1602067653274" />
+    <state width="1750" height="262" key="GridCell.Tab.0.center/0.23.1792.1031@0.23.1792.1031" timestamp="1601977305380" />
+    <state width="1750" height="250" key="GridCell.Tab.0.center/0.23.1792.1032/1792.23.1920.1057@0.23.1792.1032" timestamp="1602063884805" />
+    <state width="1358" height="262" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1601888355800" />
+    <state width="1750" height="250" key="GridCell.Tab.0.left" timestamp="1602067653274">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="250" key="GridCell.Tab.0.left/0.23.1792.1027@0.23.1792.1027" timestamp="1601990795884" />
+    <state width="1750" height="250" key="GridCell.Tab.0.left/0.23.1792.1031/1792.23.1920.1057@0.23.1792.1031" timestamp="1602067653274" />
+    <state width="1750" height="262" key="GridCell.Tab.0.left/0.23.1792.1031@0.23.1792.1031" timestamp="1601977305380" />
+    <state width="1750" height="250" key="GridCell.Tab.0.left/0.23.1792.1032/1792.23.1920.1057@0.23.1792.1032" timestamp="1602063884804" />
+    <state width="1358" height="262" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1601888355799" />
+    <state width="1750" height="250" key="GridCell.Tab.0.right" timestamp="1602067653275">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="250" key="GridCell.Tab.0.right/0.23.1792.1027@0.23.1792.1027" timestamp="1601990795884" />
+    <state width="1750" height="250" key="GridCell.Tab.0.right/0.23.1792.1031/1792.23.1920.1057@0.23.1792.1031" timestamp="1602067653275" />
+    <state width="1750" height="262" key="GridCell.Tab.0.right/0.23.1792.1031@0.23.1792.1031" timestamp="1601977305381" />
+    <state width="1750" height="250" key="GridCell.Tab.0.right/0.23.1792.1032/1792.23.1920.1057@0.23.1792.1032" timestamp="1602063884805" />
+    <state width="1358" height="262" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1601888355800" />
     <state x="357" y="207" key="Maven.ArtifactSearchDialog" timestamp="1601886136426">
       <screen x="0" y="23" width="1792" height="1034" />
     </state>
     <state x="357" y="207" key="Maven.ArtifactSearchDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1601886136426" />
-    <state x="321" y="194" key="SettingsEditor" timestamp="1601886521630">
-      <screen x="0" y="23" width="1792" height="1034" />
+    <state x="321" y="193" key="SettingsEditor" timestamp="1601990928112">
+      <screen x="0" y="23" width="1792" height="1027" />
     </state>
+    <state x="321" y="193" key="SettingsEditor/0.23.1792.1027@0.23.1792.1027" timestamp="1601990928112" />
     <state x="321" y="194" key="SettingsEditor/0.23.1792.1034@0.23.1792.1034" timestamp="1601886521630" />
+    <state x="875" y="380" key="chooseDestDirectoryDialog" timestamp="1601967618864">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="875" y="380" key="chooseDestDirectoryDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1601967618864" />
+    <state x="686" y="370" key="refactoring.ChangeSignatureDialog" timestamp="1601967952073">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="686" y="370" key="refactoring.ChangeSignatureDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1601967952073" />
   </component>
 </project>
