@@ -2,9 +2,7 @@ package leetcode.hdkshjm.month11.week1.chap3486;
 
 class Solution {
     int backStep;
-    ListNode leftStart;
-    ListNode leftEnd;
-    ListNode rightEnd;
+    ListNode newHead;
 
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null) {
@@ -17,10 +15,8 @@ class Solution {
             return head;
         }
 
-        findNewHeadNode(head, k);
-        leftEnd.next = head;
-        rightEnd.next = null;
-        return this.leftStart;
+        findNewHeadNode(head, head, k);
+        return this.newHead;
     }
 
     public int getLength(ListNode node) {
@@ -32,22 +28,22 @@ class Solution {
         return ret;
     }
 
-    public void findNewHeadNode(ListNode node, int k) {
+    public void findNewHeadNode(ListNode node, ListNode head, int k) {
         if (node == null) {
             backStep = 0;
             return;
         }
 
-        findNewHeadNode(node.next, k);
+        findNewHeadNode(node.next, head, k);
         backStep++;
         if (backStep == 1) {
-            leftEnd = node;
+            node.next = head;
         }
         if (backStep == k) {
-            leftStart = node;
+            this.newHead = node;
         }
         if (backStep == k + 1) {
-            rightEnd = node;
+            node.next = null;
         }
     }
 }
