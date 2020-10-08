@@ -11,7 +11,7 @@ class Solution {
 
             if( nums[center] <  target) {
                 start = center;
-            } else if (nums[center] <  target){
+            } else if (nums[center] ==  target){
                 return center;
             } else {
                 end = center;
