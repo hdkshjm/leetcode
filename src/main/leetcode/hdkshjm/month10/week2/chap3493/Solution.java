@@ -19,19 +19,17 @@ class Solution {
         }
 
         ListNode leftEnd = head;
-        ListNode rightHead;
-        int leftLangth = 0;
-        while (true) {
-            leftLangth++;
-            if (leftLangth == length / 2) {
-                rightHead = leftEnd.next;
-                leftEnd.next = null;
-                break;
-            }
-            leftEnd = leftEnd.next;
+        ListNode rightHead = head;
+        int leftLength = 0;
+        while (leftLength < length / 2) {
+            leftLength++;
+            leftEnd = rightHead;
+            rightHead = leftEnd.next;
         }
-        ListNode sortedLeft = mergeSort(head, leftLangth);
-        ListNode sortedRight = mergeSort(rightHead, length - leftLangth);
+        leftEnd.next = null;
+
+        ListNode sortedLeft = mergeSort(head, leftLength);
+        ListNode sortedRight = mergeSort(rightHead, length - leftLength);
 
         return merge(sortedLeft, sortedRight);
     }
