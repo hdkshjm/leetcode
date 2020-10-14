@@ -6,7 +6,12 @@ class Solution {
     public int findMinArrowShots(int[][] points) {
         if (points.length == 0) return 0;
 
-        Arrays.sort(points, (left, right) -> (int) (((long) left[1] - (long) right[1]) >>> 1));
+        Arrays.sort(points, (left, right) -> {
+                    if (left[1] > right[1]) return 1;
+                    if (left[1] == right[1]) return 0;
+                    return -1;
+                }
+        );
         int previousEnd = points[0][1];
         int num = 1;
         for (int i = 1; i < points.length; i++) {
