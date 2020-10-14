@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.problems.roman_to_integer;
+package leetcode.hdkshjm.problem.no0000_0999.no0000_0099.no0013;
 
 class Solution {
     public int romanToInt(String s) {
@@ -19,14 +19,14 @@ class Solution {
         int[] onesPlace = convert(s, "I", 1, "V", 5, "X", 10);
         s = s.substring(onesPlace[0]);
         ret = ret + onesPlace[1];
-        
+
         return ret;
     }
 
     public int[] convert(String s,
-            String multiple1String, int multiple1Value,
-            String multiple5String, int multiple5Value, 
-            String multiple10String, int multiple10Value) {
+                         String multiple1String, int multiple1Value,
+                         String multiple5String, int multiple5Value,
+                         String multiple10String, int multiple10Value) {
 
         char multiple1 = multiple1String.charAt(0);
         char multiple5 = multiple5String.charAt(0);
@@ -34,10 +34,10 @@ class Solution {
 
         if (s.length() > 1) {
             if (s.charAt(0) == multiple1 && s.charAt(1) == multiple10) { // 9
-                return new int[] { 2, multiple10Value - multiple1Value };
+                return new int[]{2, multiple10Value - multiple1Value};
             }
             if (s.charAt(0) == multiple1 && s.charAt(1) == multiple5) { // 4
-                return new int[] { 2, multiple5Value - multiple1Value };
+                return new int[]{2, multiple5Value - multiple1Value};
             }
         }
 
@@ -67,11 +67,11 @@ class Solution {
                 index++;
                 continue;
             }
-            
+
             break;
         }
 
-        return new int[] { index, ret };
-        
+        return new int[]{index, ret};
+
     }
 }

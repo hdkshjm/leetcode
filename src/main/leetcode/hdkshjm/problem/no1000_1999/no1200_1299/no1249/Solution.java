@@ -1,10 +1,10 @@
-package leetcode.hdkshjm.problem.minimum_remove_to_make_valid_parentheses;
+package leetcode.hdkshjm.problem.no1000_1999.no1200_1299.no1249;
 
 import java.util.*;
 
 class Solution {
     public String minRemoveToMakeValid(String s) {
-        ArrayDeque<Integer> leftQueue = new ArrayDeque<Integer>();
+        Deque<Integer> leftQueue = new ArrayDeque<Integer>();
         Set<Integer> removeIndexes = new HashSet<Integer>();
 
         char[] chars = s.toCharArray();
