@@ -5,17 +5,13 @@ class Solution {
         if (nums.length == 0) return 0;
         if (nums.length == 1) return nums[0];
 
-        int max = robMoeny(nums);
-
-        int[] shiftNums = new int[nums.length];
-        System.arraycopy(nums, 1, shiftNums, 0, nums.length - 1);
-        shiftNums[nums.length - 1] = nums[0];
-        int shiftMax = robMoeny(shiftNums);
+        int max = robMoeny(nums, 0);
+        int shiftMax = robMoeny(nums, 1);
 
         return Math.max(max, shiftMax);
     }
 
-    public int robMoeny(int[] nums) {
+    public int robMoeny(int[] nums, int start) {
         int currentMax = 0;
         int previousMax = 0;
 
@@ -26,10 +22,16 @@ class Solution {
                 break;
             }
 
+            int sum;
+            if (i + start < nums.length) {
+                sum = previousMax + nums[i + start];
+            } else {
+                sum = previousMax + nums[i + start - nums.length];
+            }
             int tempMax = currentMax;
             boolean tempIsRobbed = isCurrentRobbedLastHouse;
-            if (previousMax + nums[i] >= currentMax) {
-                currentMax = previousMax + nums[i];
+            if (sum >= currentMax) {
+                currentMax = sum;
                 if (i == 0) {
                     isCurrentRobbedLastHouse = true;
                 } else {
