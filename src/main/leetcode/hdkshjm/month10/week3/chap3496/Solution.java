@@ -7,20 +7,26 @@ import java.util.Map;
 class Solution {
     public void rotate(int[] nums, int k) {
         k = k % nums.length;
+        if (k == 0) return;
 
-        int[] rotateArray = new int[nums.length - k];
-        for (int i = 0; i < nums.length - k; i++) {
-            rotateArray[i] = nums[i];
+        int loop = 0;
+        int maxShift = 0;
+        for (int i = 1; i <= k; i++) {
+            if ((nums.length * i) % k == 0) {
+                maxShift = (nums.length * i) / k;
+                loop = nums.length / maxShift;
+                break;
+            }
         }
 
-        for (int i = 0; i < k; i++) {
-            int targetIndex = i + nums.length - k;
-            int temp = nums[i];
-            nums[i] = nums[targetIndex];
-        }
-
-        for (int i = k; i < nums.length; i++) {
-            nums[i] = rotateArray[i - k];
+        for (int i = 0; i < loop; i++) {
+            int previous = nums[(nums.length + i - k) % nums.length];
+            for (int j = 0; j < maxShift; j++) {
+                int from = (nums.length + i + j * k) % nums.length;
+                int temp = nums[from];
+                nums[from] = previous;
+                previous = temp;
+            }
         }
     }
 }
