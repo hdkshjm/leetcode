@@ -4,28 +4,15 @@ import java.util.*;
 
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
-        if (intervals.length < 2) {
-            return intervals.length;
+        Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
+
+        Queue<Integer> lastUsed = new PriorityQueue<>();
+        int max = 0;
+        for (int[] interval : intervals) {
+            lastUsed.add(interval[1]);
+            while (!lastUsed.isEmpty() && lastUsed.peek() <= interval[0]) lastUsed.poll();
+            max = Math.max(max, lastUsed.size());
         }
-
-        Arrays.sort(intervals, (left, right) -> {
-            if (left[0] > right[0]) return 1;
-            if (left[0] == right[0]) return 0;
-            return -1;
-        });
-
-        List<Integer> lastUsed = new ArrayList<Integer>();
-        lastUsed.add(intervals[0][1]);
-
-        for (int i = 1; i < intervals.length; i++) {
-            for (int j = 0; j < lastUsed.size(); j++) {
-                if (lastUsed.get(j) <= intervals[i][0]) {
-                    lastUsed.remove(j);
-                    break;
-                }
-            }
-            lastUsed.add(intervals[i][1]);
-        }
-        return lastUsed.size();
+        return max;
     }
 }
