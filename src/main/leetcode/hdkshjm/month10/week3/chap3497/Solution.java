@@ -1,26 +1,41 @@
 package leetcode.hdkshjm.month10.week3.chap3497;
 
-import java.util.Arrays;
-
 class Solution {
+    int mLength;
+    int nLength;
+    int[][] matrix;
+
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix.length == 0) {
             return false;
         }
+        this.matrix = matrix;
+        mLength = matrix.length;
+        nLength = matrix[0].length;
 
-        int end = matrix[0].length;
-        for (int[] array : matrix) {
-            int newEnd = Arrays.binarySearch(array, 0, end, target);
-            if (newEnd == end) {
-                return false;
-            }
-            if (newEnd >= 0) {
+        int start = 0;
+        int end = mLength * nLength - 1;
+        int center;
+        while (end - start > 2) {
+            center = (end - start) / 2 + start;
+            if (get(center) < target) {
+                start = center;
+            } else if (get(center) == target) {
                 return true;
-            }
-            if (newEnd < 0) {
-                end = ~newEnd;
+            } else {
+                end = center;
             }
         }
+        for (int i = start; i <= end; i++) {
+            if (get(i) == target)
+                return true;
+        }
         return false;
+    }
+
+    private int get(int i) {
+        int m = i / nLength;
+        int n = i % nLength;
+        return matrix[m][n];
     }
 }
