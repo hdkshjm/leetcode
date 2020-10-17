@@ -1,41 +1,27 @@
-package leetcode.hdkshjm.month10.week3.chap3497;
+package leetcode.hdkshjm.month10.week3.chap3498;
+
+import java.util.*;
 
 class Solution {
-    int mLength;
-    int nLength;
-    int[][] matrix;
-
-    public boolean searchMatrix(int[][] matrix, int target) {
-        if (matrix.length == 0) {
-            return false;
+    public List<String> findRepeatedDnaSequences(String s) {
+        if (s.length() < 10) {
+            return Arrays.asList();
         }
-        this.matrix = matrix;
-        mLength = matrix.length;
-        nLength = matrix[0].length;
 
-        int start = 0;
-        int end = mLength * nLength - 1;
-        int center;
-        while (end - start > 2) {
-            center = (end - start) / 2 + start;
-            if (get(center) < target) {
-                start = center;
-            } else if (get(center) == target) {
-                return true;
+        Set<String> set = new HashSet<>();
+        Set<String> ret = new HashSet<>();
+        char[] chars = s.toCharArray();
+        StringBuffer sb = new StringBuffer(" " + s.substring(0, 9));
+        for (int i = 9; i < chars.length; i++) {
+            sb.deleteCharAt(0);
+            sb.append(chars[i]);
+            if (set.contains(sb.toString())) {
+                ret.add(sb.toString());
             } else {
-                end = center;
+                set.add(sb.toString());
             }
         }
-        for (int i = start; i <= end; i++) {
-            if (get(i) == target)
-                return true;
-        }
-        return false;
-    }
 
-    private int get(int i) {
-        int m = i / nLength;
-        int n = i % nLength;
-        return matrix[m][n];
+        return new ArrayList<>(ret);
     }
 }
