@@ -8,20 +8,34 @@ class Solution {
             return Arrays.asList();
         }
 
-        Set<String> set = new HashSet<>();
-        Set<String> ret = new HashSet<>();
+        Map<Character, Integer> npToInt = new HashMap<>() {{
+            put('A', 0);
+            put('C', 1);
+            put('T', 2);
+            put('G', 3);
+        }};
+
         char[] chars = s.toCharArray();
-        StringBuffer sb = new StringBuffer(" " + s.substring(0, 9));
-        for (int i = 9; i < chars.length; i++) {
-            sb.deleteCharAt(0);
-            sb.append(chars[i]);
-            if (set.contains(sb.toString())) {
-                ret.add(sb.toString());
+        int[] nums = new int[s.length()];
+        for (int i = 0; i < chars.length; i++) nums[i] = npToInt.get(chars[i]);
+
+        Set<String> ret = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
+        int value = 0;
+        for (int i = 0; i < chars.length; i++) {
+            if (i < 10) {
+                value = value << 2;
+                value = value + nums[i];
+                if (i == 9) set.add(value);
+                continue;
+            }
+            value = (value << 2) - (nums[i - 10] << 20) + nums[i];
+            if (set.contains(value)) {
+                ret.add(s.substring(i - 9, i + 1));
             } else {
-                set.add(sb.toString());
+                set.add(value);
             }
         }
-
         return new ArrayList<>(ret);
     }
 }
