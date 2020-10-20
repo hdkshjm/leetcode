@@ -11,7 +11,7 @@ class Solution {
         }
 
         projection.put(node, new Node(node.val));
-        shallowCopy(node);
+        createCloneWithoutNeighbors(node);
         for (Node src : projection.keySet()) {
             for (Node n : src.neighbors) {
                 projection.get(src).neighbors.add(projection.get(n));
@@ -21,11 +21,11 @@ class Solution {
         return projection.get(node);
     }
 
-    public void shallowCopy(Node src) {
+    private void createCloneWithoutNeighbors(Node src) {
         for (Node srcNeighbor : src.neighbors) {
             if (!projection.containsKey(srcNeighbor)) {
                 projection.put(srcNeighbor, new Node(srcNeighbor.val));
-                shallowCopy(srcNeighbor);
+                createCloneWithoutNeighbors(srcNeighbor);
             }
         }
     }
