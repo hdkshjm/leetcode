@@ -3,7 +3,11 @@ package leetcode.hdkshjm.month10.week3.chap3501;
 import java.util.*;
 
 class Solution {
-    Map<Node, Node> projection = new HashMap<>();
+    private Map<Node, Node> projection;
+
+    public Solution(){
+        projection = new HashMap<>();
+    }
 
     public Node cloneGraph(Node node) {
         if (node == null) {
