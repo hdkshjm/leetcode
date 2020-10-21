@@ -4,37 +4,32 @@ import java.util.*;
 
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
-        if (asteroids.length == 0) {
-            return asteroids;
-        }
-
-        ArrayDeque<Integer> list = new ArrayDeque<>();
+        Deque<Integer> queue = new ArrayDeque<>();
         for (int i = 0; i < asteroids.length; i++) {
-            if (list.isEmpty() || (list.peekLast() < 0 && asteroids[i] < 0) || asteroids[i] > 0) {
-                list.addLast(asteroids[i]);
+            if (queue.isEmpty() || (queue.peekLast() < 0 && asteroids[i] < 0) || asteroids[i] > 0) {
+                queue.addLast(asteroids[i]);
                 continue;
             }
 
-            while (!list.isEmpty() &&
-                    list.peekLast() > 0 && asteroids[i] < 0 &&
-                    list.peekLast() < Math.abs(asteroids[i])) {
-                list.pollLast();
+            while (!queue.isEmpty() &&
+                    queue.peekLast() > 0 && asteroids[i] < 0 &&
+                    queue.peekLast() < Math.abs(asteroids[i])) {
+                queue.pollLast();
+            }
+
+            if (queue.isEmpty() || queue.peekLast() < 0 || queue.peekLast() < Math.abs(asteroids[i])) {
+                queue.addLast(asteroids[i]);
                 continue;
             }
 
-            if (list.isEmpty() || list.peekLast() < 0 || list.peekLast() < Math.abs(asteroids[i])) {
-                list.addLast(asteroids[i]);
-                continue;
-            }
-
-            if (list.peekLast() == Math.abs(asteroids[i])) {
-                list.pollLast();
+            if (queue.peekLast() == Math.abs(asteroids[i])) {
+                queue.pollLast();
                 continue;
             }
         }
 
-        int[] ret = new int[list.size()];
-        for (int i = 0; i < ret.length; i++) ret[i] = list.poll();
+        int[] ret = new int[queue.size()];
+        for (int i = 0; i < ret.length; i++) ret[i] = queue.poll();
         return ret;
     }
 }
