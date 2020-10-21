@@ -5,31 +5,27 @@ import java.util.*;
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
         Deque<Integer> queue = new ArrayDeque<>();
-        for (int i = 0; i < asteroids.length; i++) {
-            if (queue.isEmpty() || (queue.peekLast() < 0 && asteroids[i] < 0) || asteroids[i] > 0) {
-                queue.addLast(asteroids[i]);
+        for (int asteroid : asteroids) {
+            if (queue.isEmpty() || (queue.peekLast() < 0 && asteroid < 0) || asteroid > 0) {
+                queue.addLast(asteroid);
                 continue;
             }
 
             while (!queue.isEmpty() &&
-                    queue.peekLast() > 0 && asteroids[i] < 0 &&
-                    queue.peekLast() < Math.abs(asteroids[i])) {
+                    queue.peekLast() > 0 && asteroid < 0 &&
+                    queue.peekLast() < Math.abs(asteroid)) {
                 queue.pollLast();
             }
 
-            if (queue.isEmpty() || queue.peekLast() < 0 || queue.peekLast() < Math.abs(asteroids[i])) {
-                queue.addLast(asteroids[i]);
+            if (queue.isEmpty() || queue.peekLast() < 0 || queue.peekLast() < Math.abs(asteroid)) {
+                queue.addLast(asteroid);
                 continue;
             }
 
-            if (queue.peekLast() == Math.abs(asteroids[i])) {
+            if (queue.peekLast() == Math.abs(asteroid)) {
                 queue.pollLast();
-                continue;
             }
         }
-
-        int[] ret = new int[queue.size()];
-        for (int i = 0; i < ret.length; i++) ret[i] = queue.poll();
-        return ret;
+        return queue.stream().mapToInt(i -> i).toArray();
     }
 }
