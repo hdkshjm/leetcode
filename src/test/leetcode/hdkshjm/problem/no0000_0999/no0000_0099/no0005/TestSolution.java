@@ -26,9 +26,8 @@ public class TestSolution {
 
     @ParameterizedTest
     @MethodSource("testProvider")
-    void findMedianSortedArrays(String s, List<String> expected) {
+    void test(String s, List<String> expected) {
         String result = solution.longestPalindrome(s);
-        System.out.println("result=" + result);
         Assertions.assertTrue(expected.contains(result));
     }
 }
