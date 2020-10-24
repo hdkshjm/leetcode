@@ -11,20 +11,15 @@ class Solution {
         int end = tokens.length - 1;
         while (end >= start) {
             if (tokens[start] <= P) {
-                P -= tokens[start];
-                start++;
+                P -= tokens[start++];
                 score += 1;
                 continue;
             }
             if (score == 0 || end == start) {
                 break;
             }
-            if (tokens[end] + P > tokens[start]) {
-                P += tokens[end];
-                end--;
-                score -= 1;
-                continue;
-            }
+            P += tokens[end--];
+            score -= 1;
         }
         return score;
     }
