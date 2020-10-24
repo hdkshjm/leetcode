@@ -12,14 +12,12 @@ class Solution {
         while (end >= start) {
             if (tokens[start] <= P) {
                 P -= tokens[start++];
-                score += 1;
+                score++;
                 continue;
             }
-            if (score == 0 || end == start) {
-                break;
-            }
+            if (score == 0 || end == start) break;
             P += tokens[end--];
-            score -= 1;
+            score--;
         }
         return score;
     }
