@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week3_3461;
+package leetcode.hdkshjm.challenge.month09.week2.chap3454;
 
 import java.util.stream.Stream;
 
@@ -13,18 +13,19 @@ public class TestSolution {
 
     static Stream<Arguments> testProvider() {
         return Stream.of(
-                Arguments.of(
-                        "Hello World", 5),
-                Arguments.of("", 0),
-                Arguments.of("             ", 0)
-        );
+                 Arguments.of("1.01", "1.001", 0),
+                 Arguments.of("1.0", "1.0.0", 0),
+                 Arguments.of("0.1", "1.1", -1),
+                 Arguments.of("1.0.1", "1", 1),
+                Arguments.of("7.5.2.4", "7.5.3", -1));
     }
 
     @ParameterizedTest
     @MethodSource("testProvider")
-    void insert(String s, int expected) {
-        int result = solution.lengthOfLastWord(s);
+    void compareVersion(String version1, String version2, int expected) {
+        int result = solution.compareVersion(version1, version2);
         Assertions.assertEquals(expected, result);
 
     }
 }
+

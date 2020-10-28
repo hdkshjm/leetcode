@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week2_3457;
+package leetcode.hdkshjm.challenge.month09.week2.week2_3457;
 
 import java.util.ArrayList;
 import java.util.Arrays;

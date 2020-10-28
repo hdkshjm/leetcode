@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week2_3458;
+package leetcode.hdkshjm.challenge.month09.week2.week2_3458;
 
 import java.util.Arrays;
 import java.util.stream.Stream;

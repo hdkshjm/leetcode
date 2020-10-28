@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week2_3459;
+package leetcode.hdkshjm.challenge.month09.week2.week2_3459;
 
 class Solution {
     public int rob(int[] nums) {

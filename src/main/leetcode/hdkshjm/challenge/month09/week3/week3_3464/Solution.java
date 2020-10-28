@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week3_3464;
+package leetcode.hdkshjm.challenge.month09.week3.week3_3464;
 
 class Solution {
 

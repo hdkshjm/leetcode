@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week2_3456;
+package leetcode.hdkshjm.challenge.month09.week2.week2_3456;
 
 class Solution {
     public int maxProduct(int[] nums) {

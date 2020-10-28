@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week1_3454;
+package leetcode.hdkshjm.challenge.month09.week2.chap3454;
 
 class Solution {
     public int compareVersion(String version1, String version2) {

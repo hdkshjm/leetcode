@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week3_3461;
+package leetcode.hdkshjm.challenge.month09.week3.week3_3461;
 
 class Solution {
     public int lengthOfLastWord(String s) {

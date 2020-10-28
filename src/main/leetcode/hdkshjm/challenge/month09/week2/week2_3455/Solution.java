@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.month09.week2_3455;
+package leetcode.hdkshjm.challenge.month09.week2.week2_3455;
 
 class Solution {
     public String getHint(String secret, String guess) {
