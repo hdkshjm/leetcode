@@ -1,41 +1,40 @@
 package leetcode.hdkshjm.challenge.month11.week1.chap3517;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 
 class Solution {
     public ListNode insertionSortList(ListNode head) {
         if (head == null) return null;
 
-        Comparator<ListNode> comparator = new Comparator<ListNode>() {
-            public int compare(ListNode left, ListNode right) {
-                return left.val - right.val;
-            }
-        };
-
-        List<ListNode> nodes = new ArrayList<>();
-        nodes.add(head);
+        ListNode newHead = head;
         ListNode input = head.next;
+        newHead.next = null;
         while (input != null) {
-            int index = Collections.binarySearch(nodes, input, comparator);
-            index = (index >= 0) ? index : ~index;
-            nodes.add(index, input);
-            input = input.next;
+            ListNode next = input.next;
+            ListNode node = newHead;
+            while (node != null) {
+                if (input.val <= node.val) {
+                    input.next = node;
+                    if (node == newHead) newHead = input;
+                    break;
+                }
+
+                if (node.next == null) {
+                    node.next = input;
+                    input.next = null;
+                    break;
+                }
+
+                if (input.val > node.val && input.val <= node.next.val) {
+                    ListNode temp = node.next;
+                    node.next = input;
+                    input.next = temp;
+                    break;
+                }
+                node = node.next;
+            }
+            input = next;
         }
 
-        ListNode previous = null;
-        for (ListNode node : nodes) {
-            if (previous == null) {
-                previous = node;
-                continue;
-            }
-            previous.next = node;
-            previous = node;
-        }
-        previous.next = null;
-        return nodes.get(0);
+        return newHead;
     }
 }
