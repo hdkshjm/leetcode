@@ -9,6 +9,7 @@ class Solution {
         if (getDivisionSum(nums, 1, map) <= threshold) {
             return 1;
         }
+
         int left = (int) (getDivisionSum(nums, 1, map) / threshold);
         int right = (left + nums.length) * 2;
         int center = (right + left) / 2;
@@ -22,6 +23,7 @@ class Solution {
                 center = (right + center) / 2;
                 continue;
             }
+
             // leftSum > threshold => centerSum  > rightSum
             right = center;
             center = (left + center) / 2;
@@ -29,7 +31,8 @@ class Solution {
 
         for (int i = left; i <= right; i++) {
             if (getDivisionSum(nums, i, map) == threshold) return i;
-            if (getDivisionSum(nums, i - 1, map) > threshold && getDivisionSum(nums, i, map) < threshold) return i;
+            if (i > 1 && getDivisionSum(nums, i - 1, map) > threshold && getDivisionSum(nums, i, map) < threshold)
+                return i;
         }
         return left;
     }
@@ -38,7 +41,7 @@ class Solution {
         if (!map.containsKey(value)) {
             long ret = 0;
             for (int n : nums) {
-                ret += (long) Math.ceil((double) n / value);
+                ret += n / value + (n % value == 0 ? 0 : 1);
             }
             map.put(value, ret);
         }
