@@ -5,11 +5,8 @@ class Solution {
         int num = 1;
         int i = 0;
         while (k > 0) {
-            if (num != arr[i]) {
-                k--;
-            } else {
-                if (i < arr.length - 1) i++;
-            }
+            if (num != arr[i]) k--;
+            else if (i < arr.length - 1) i++;
             num++;
         }
         return num - 1;
