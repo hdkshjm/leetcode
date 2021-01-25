@@ -1,4 +1,4 @@
-package leetcode.hdkshjm.challenge.year2021.month01.week3.chap3613;
+package leetcode.hdkshjm.challenge.year2021.month01.week4.chap3613;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
