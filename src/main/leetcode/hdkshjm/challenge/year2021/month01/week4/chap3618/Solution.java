@@ -6,7 +6,7 @@ class Solution {
         long ret = 0; // 計算してる時に桁溢れしちゃうので
         int shift = 0;
         for (int i = 1; i <= n; i++) {
-            if ((i & (i - 1)) == 0) shift++; // 桁数が変わったら、その分shiftする量を増やす
+            shift =  32 - Integer.numberOfLeadingZeros(i);
             ret = ((ret << shift) + i);
             if (ret > MODULO) ret %= MODULO;
         }
