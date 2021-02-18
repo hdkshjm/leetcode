@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 class Solution {
     public int shortestPathBinaryMatrix(int[][] grid) {
-        return dijkstra(grid);
+        return aster(grid);
     }
 
     private int dijkstra(int[][] grid) {
@@ -49,12 +49,10 @@ class Solution {
         return lengths[ROW_MAX - 1][COL_MAX - 1] == MAX_LENGTH ? -1 : lengths[ROW_MAX - 1][COL_MAX - 1];
     }
 
-    private int getManhattanDistance(int x1, int y1, int x2, int y2) {
-        return Math.abs(x1 - x2) + Math.abs(y1 - y2);
-    }
-
-    private int getEuclideanDistance(int x1, int y1, int x2, int y2) {
-        return (int) Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+    private int estimateDistance(int x1, int y1, int x2, int y2) {
+        int xLength = Math.abs(x1 - x2);
+        int yLength = Math.abs(y1 - y2);
+        return Math.min(xLength, yLength);
     }
 
     private int aster(int[][] grid) {
@@ -91,7 +89,7 @@ class Solution {
                 if (lengths[toX][toY] > lengths[x][y] + 1) {
                     lengths[toX][toY] = lengths[x][y] + 1;
                     // 3つ目のintをlengths[toX][toY]のみにすればdijkstraとなる
-                    queue.add(new int[]{toX, toY, getEuclideanDistance(ROW_MAX - 1, toX, COL_MAX - 1, toY) + lengths[toX][toY]});
+                    queue.add(new int[]{toX, toY, estimateDistance(ROW_MAX - 1, toX, COL_MAX - 1, toY) + lengths[toX][toY]});
                 }
             }
         }
