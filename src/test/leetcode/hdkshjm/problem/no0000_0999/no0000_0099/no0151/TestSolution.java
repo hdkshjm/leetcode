@@ -22,7 +22,7 @@ public class TestSolution {
 
     @ParameterizedTest
     @MethodSource("testProvider")
-    void twoSum(String s, String expected) {
+    void test(String s, String expected) {
         String result = solution.reverseWords(s);
         Assertions.assertEquals(expected, result);
     }
