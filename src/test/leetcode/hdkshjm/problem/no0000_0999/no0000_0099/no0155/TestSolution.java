@@ -8,8 +8,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 public class TestSolution {
-
-
     static Stream<Arguments> testProvider() {
         return Stream.of(
                 Arguments.of(new String[]{"MinStack", "push", "push", "push", "getMin", "pop", "top", "getMin"},
