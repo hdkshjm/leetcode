@@ -1,57 +1,66 @@
 package leetcode.hdkshjm.problem.no1000_1999.no1000_1199.no1044;
 
-
-import java.util.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Comparator;
 
 class Solution {
     public String longestDupSubstring(String s) {
-        Map<String, List<Integer>> map = new HashMap<>();
-
         char[] array = s.toCharArray();
-        String longestWord = "";
-
-        // Stringは遅いので、charの配列とか使いたいけど、immutableじゃないとkeyにつかえない。。。
+        Suffix[] suffixes = new Suffix[array.length];
         for (int i = 0; i < array.length; i++) {
-            String key = String.valueOf(array[i]);
-            if (!map.containsKey(key)) map.put(key, new ArrayList<Integer>());
-            map.get(key).add(i);
-            longestWord = key;
+            suffixes[i] = new Suffix(array, i);
         }
-        for (Iterator<String> ite = map.keySet().iterator(); ite.hasNext(); )
-            if (map.get(ite.next()).size() <= 1) ite.remove();
+        Arrays.sort(suffixes, new SuffixComparator());
 
-        if (map.isEmpty()) return "";
-
-        while (!map.isEmpty()) {
-            Map<String, List<Integer>> newMap = new HashMap<>();
-            for (String word : map.keySet()) {
-                List<Integer> list = map.get(word);
-                if (list.size() <= 1) continue;
-                for (int i = 0; i < list.size(); i++) {
-                    for (int j = i + 1; j < list.size(); j++) {
-                        if (list.get(i) + word.length()  < array.length
-                                && list.get(j) + word.length()  < array.length
-                                && array[list.get(i) + word.length()  ] ==
-                                array[list.get(j) + word.length()  ]) {
-                            longestWord = word + array[list.get(i) + word.length()  ];
-                            if (!newMap.containsKey(longestWord)) newMap.put(longestWord, new ArrayList<Integer>());
-
-                            List<Integer> newDuplicateList = newMap.get(longestWord);
-                            if (!newDuplicateList.contains(list.get(i))) newDuplicateList.add(list.get(i));
-                            newDuplicateList.add(list.get(j));
-                            break;
-                        }
-                    }
-                }
+        int position = 0;
+        int length = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            Suffix left = suffixes[i];
+            Suffix right = suffixes[i + 1];
+            int j;
+            for (j = 0; j < Math.min(left.getLength(), right.getLength()); j++) if (left.charAt(j) != right.charAt(j)) break;
+            if (j > length) {
+                position = left.getPosition();
+                length = j;
             }
-
-            for (Iterator<String> ite = newMap.keySet().iterator(); ite.hasNext(); )
-                if (newMap.get(ite.next()).size() <= 1) ite.remove();
-
-            map = newMap;
         }
-        return longestWord;
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(array, position, length);
+        return sb.toString();
+    }
+}
+
+class Suffix {
+    private char[] array;
+    private int position;
+
+    public Suffix(char[] array, int position) {
+        this.array = array;
+        this.position = position;
+    }
+
+    public int getPosition() {
+        return this.position;
+    }
+
+    public int getLength() {
+        return this.array.length - this.position;
+    }
+
+    public char charAt(int i) {
+        return array[i + this.position];
+    }
+}
+
+class SuffixComparator implements Comparator<Suffix> {
+    @Override
+    public int compare(Suffix left, Suffix right) {
+        int n = Math.min(left.getLength(), right.getLength());
+        for (int i = 0; i < n; i++) {
+            if (left.charAt(i) < right.charAt(i)) return -1;
+            if (left.charAt(i) > right.charAt(i)) return +1;
+        }
+        return left.getLength() - right.getLength();
     }
 }
