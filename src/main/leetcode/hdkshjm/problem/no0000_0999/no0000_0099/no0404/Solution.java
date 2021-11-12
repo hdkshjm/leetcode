@@ -1,5 +1,7 @@
 package leetcode.hdkshjm.problem.no0000_0999.no0000_0099.no0404;
 
+import leetcode.hdkshjm.common.TreeNode;
+
 class Solution {
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null) return 0;

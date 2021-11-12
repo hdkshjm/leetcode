@@ -1,5 +1,7 @@
 package leetcode.hdkshjm.problem.no0000_0999.no0000_0099.no0993;
 
+import leetcode.hdkshjm.common.TreeNode;
+
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {
         int[] depths = new int[2];

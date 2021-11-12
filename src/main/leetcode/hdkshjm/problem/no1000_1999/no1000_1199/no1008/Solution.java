@@ -3,6 +3,8 @@ package leetcode.hdkshjm.problem.no1000_1999.no1000_1199.no1008;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import leetcode.hdkshjm.common.TreeNode;
+
 class Solution {
     public TreeNode bstFromPreorder(int[] preorder) {
         Deque<TreeNode> q = new ArrayDeque<>();

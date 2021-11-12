@@ -1,5 +1,7 @@
 package leetcode.hdkshjm.problem.no0000_0999.no0000_0099.no0222;
 
+import leetcode.hdkshjm.common.TreeNode;
+
 class Solution {
     public int countNodes(TreeNode root) {
         if (root == null) return 0;

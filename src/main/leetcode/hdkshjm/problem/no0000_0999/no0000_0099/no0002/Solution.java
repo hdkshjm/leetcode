@@ -1,5 +1,7 @@
 package leetcode.hdkshjm.problem.no0000_0999.no0000_0099.no0002;
 
+import leetcode.hdkshjm.common.ListNode;
+
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = null;

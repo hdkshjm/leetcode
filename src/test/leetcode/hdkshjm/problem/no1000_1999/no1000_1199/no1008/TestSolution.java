@@ -6,6 +6,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import leetcode.hdkshjm.common.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.stream.Stream;
@@ -17,7 +19,7 @@ public class TestSolution {
         return Stream.of(
                 Arguments.of(new int[]{8, 5, 1, 7, 10, 12}, new Integer[]{8, 5, 10, 1, 7, null, 12}),
                 Arguments.of(new int[]{1, 3}, new Integer[]{1, null, 3}),
-                Arguments.of(new int[]{1, 2, 3}, new Integer[]{1,null,2,null,3})
+                Arguments.of(new int[]{1, 2, 3}, new Integer[]{1, null, 2, null, 3})
         );
     }
 
@@ -31,14 +33,14 @@ public class TestSolution {
 
     private void assertEquals(TreeNode actual, TreeNode expected) {
         if (expected != null && actual == null) {
-            Assertions.fail("expected is " + +expected.val + ", but actual is null");
+            Assertions.fail("expected is " + expected.val + ", but actual is null");
         } else if (expected == null && actual != null) {
             Assertions.fail("expected is null, but actual is " + actual.val);
         }
 
         Assertions.assertEquals(expected.val, actual.val);
         if (expected.left != null && actual.left == null) {
-            Assertions.fail("expected is " + +expected.left.val + ", but actual is null");
+            Assertions.fail("expected is " + expected.left.val + ", but actual is null");
         } else if (expected.left == null && actual.left != null) {
             Assertions.fail("expected is null, but actual is " + actual.left.val);
         } else if (expected.left != null && actual.left != null) {
@@ -46,7 +48,7 @@ public class TestSolution {
         }
 
         if (expected.right != null && actual.right == null) {
-            Assertions.fail("expected is " + +expected.right.val + ", but actual is null");
+            Assertions.fail("expected is " + expected.right.val + ", but actual is null");
         } else if (expected.right == null && actual.right != null) {
             Assertions.fail("expected is null, but actual is " + actual.right.val);
         } else if (expected.right != null && actual.right != null) {

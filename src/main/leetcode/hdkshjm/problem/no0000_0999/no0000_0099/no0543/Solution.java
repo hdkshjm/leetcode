@@ -1,5 +1,7 @@
 package leetcode.hdkshjm.problem.no0000_0999.no0000_0099.no0543;
 
+import leetcode.hdkshjm.common.TreeNode;
+
 class Solution {
     private int diameter = 0;
 

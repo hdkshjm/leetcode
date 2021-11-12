@@ -5,6 +5,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import leetcode.hdkshjm.common.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.stream.Stream;
