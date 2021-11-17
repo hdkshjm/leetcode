@@ -8,18 +8,18 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 public class TestSolution {
-Solution solution = new  Solution();
+    Solution solution = new Solution();
 
     static Stream<Arguments> testProvider() {
         return Stream.of(
-                Arguments.of(3, 7,28)
+                Arguments.of(3, 7, 28)
         );
     }
 
     @ParameterizedTest
     @MethodSource("testProvider")
     void test(int m, int n, int expected) {
-        int actual = solution.uniquePaths(m,n);
+        int actual = solution.uniquePaths(m, n);
         Assertions.assertEquals(expected, actual);
     }
 }
