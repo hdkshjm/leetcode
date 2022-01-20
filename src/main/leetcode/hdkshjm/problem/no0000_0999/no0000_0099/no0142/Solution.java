@@ -4,9 +4,8 @@ import leetcode.hdkshjm.common.ListNode;
 
 public class Solution {
     public ListNode detectCycle(ListNode head) {
-        if (head.next == null) return null;
+        if (head == null || head.next == null || head.next.next == null) return null;
         ListNode slow = head.next;
-        if (slow.next == null) return null;
         ListNode fast = slow.next;
 
         while (slow != fast) {
