@@ -14,12 +14,24 @@ public class ListNode {
     }
 
     public ListNode(int[] values) {
+        if (values.length == 0) return ;
+
         this.val = values[0];
         ListNode node = null;
         for (int i = 0; i < values.length - 1; i++) {
             node = new ListNode(values[values.length - 1 - i], node);
         }
         this.next = node;
+    }
+
+    public static ListNode create(int[] values) {
+        if (values.length == 0) return null;
+
+        ListNode node = null;
+        for (int i = 0; i < values.length; i++) {
+            node = new ListNode(values[values.length - 1 - i], node);
+        }
+        return node;
     }
 
 
