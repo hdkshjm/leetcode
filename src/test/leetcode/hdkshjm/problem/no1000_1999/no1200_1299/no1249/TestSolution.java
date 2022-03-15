@@ -23,6 +23,7 @@ public class TestSolution {
     @MethodSource("testProvider")
     void testMinRemoveToMakeValid(String s, String expected) {
         String result = solution.minRemoveToMakeValid(s);
+        System.out.println(expected + " " + result);
         Assertions.assertEquals(expected, result);
     }
 }

@@ -4,30 +4,29 @@ import java.util.*;
 
 class Solution {
     public String minRemoveToMakeValid(String s) {
-        Deque<Integer> leftQueue = new ArrayDeque<Integer>();
-        Set<Integer> removeIndexes = new HashSet<Integer>();
+        Set<Integer> rights = new HashSet<>();
+        Set<Integer> lefts = new HashSet<>();
+        Deque<Integer> stack = new ArrayDeque<>();
 
         char[] chars = s.toCharArray();
         for (int i = 0; i < chars.length; i++) {
-            if (chars[i] == ')') {
-                if (leftQueue.isEmpty()) {
-                    removeIndexes.add(i);
-                } else {
-                    leftQueue.removeLast();
-                }
-            }
             if (chars[i] == '(') {
-                leftQueue.add(i);
+                lefts.add(i);
+                stack.addLast(i);
+                continue;
+            }
+
+            if (chars[i] == ')') {
+                if (stack.isEmpty()) rights.add(i);
+                else lefts.remove(stack.pollLast());
             }
         }
 
-        removeIndexes.addAll(leftQueue);
-        StringBuffer ret = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < chars.length; i++) {
-            if (!removeIndexes.contains(i)) {
-                ret.append(chars[i]);
-            }
+            if (lefts.contains(i) || rights.contains(i)) continue;
+            sb.append(chars[i]);
         }
-        return ret.toString();
+        return sb.toString();
     }
 }
