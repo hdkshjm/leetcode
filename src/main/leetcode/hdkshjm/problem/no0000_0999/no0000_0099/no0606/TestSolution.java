@@ -13,16 +13,10 @@ public class TestSolution {
 
     static Stream<Arguments> testProvider() {
         return Stream.of(
-                Arguments.of(new Integer[]{1,2,3,4}, "1(2(4))(3)"),
-                Arguments.of(new Integer[]{1,2,3,null,4}, "1(2()(4))(3)")
+                Arguments.of(new int[]{1, 3, 6, 4, 1, 2}, 5),
+                Arguments.of(new int[]{1,2,3,4}, 4),
+                Arguments.of(new int[]{-1,-3}, 1)
         );
     }
 
-    @ParameterizedTest
-    @MethodSource("testProvider")
-    void test(Integer[] values, String expected) {
-        TreeNode root = TreeNode.create(values);
-        String actual = solution.tree2str(root);
-        Assertions.assertEquals(expected, actual);
-    }
 }
